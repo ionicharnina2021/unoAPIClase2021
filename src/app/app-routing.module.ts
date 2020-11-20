@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'alertando',
+    loadChildren: () => import('./alertando/alertando.module').then( m => m.AlertandoPageModule)
+  },
+  {
+    path: 'imagenes',
+    loadChildren: () => import('./imagenes/imagenes.module').then( m => m.ImagenesPageModule)
+  },
 ];
 
 @NgModule({

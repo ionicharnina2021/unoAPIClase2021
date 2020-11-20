@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>alertando</ion-title>
+    <ion-button button routerLink="" slots="start">Back</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-button (click)="presentAlert()">
+      Alerta Bateria
+    </ion-button>
+    <ion-button (click)="presentConfirm()">
+      Confirmacion
+    </ion-button>
+  </ion-item>
+      <ion-button (click)="presentChecking()">
+        Cheking
+      </ion-button>
+</ion-content>

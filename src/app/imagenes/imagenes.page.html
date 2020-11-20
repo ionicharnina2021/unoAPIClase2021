@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>imagenes</ion-title>
+  </ion-toolbar>
+</ion-header>
+<!-- Todos los recursos locales deben estar en la carpeta de assets porque la instalacion en el terminal
+    respeta estas carpetas como propias y no se les puede dar una ruta absoluta o local porque el so del movil
+  es el encargado de definir como estructura su informacion, es decir el scafolding en desarrollo, lo que ves ahora,
+es muy diferente de lo que pasa en produccion, una vez instalado en el movil -->
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let image of images">
+      <ion-label>{{path+image}}</ion-label>
+      <ion-img [src]="path+image"></ion-img>
+    </ion-item>
+  </ion-list>
+</ion-content>
